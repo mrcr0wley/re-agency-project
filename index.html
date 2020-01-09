@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>re-agency-project</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="grid-container">
+<header class="Header">
+    <div class="header__inner">
+        <div class="header__logo">
+            <img class="logo__img" src="img/header__logo.png" alt="">
+        </div>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header__slider">
+        <ul id="header__slides">
+            <li class="slide showing">
+                <h1 class = "slider__title">Наша компания имеет 10 лет опыта</h1>
+                <p class = "slider__text">Благодаря нам совершено более 15000 сделок</p>
+            </li>
+            <li class="slide">
+                <h1 class = "slider__title">Продажа, покупка, оренда</h1>
+                <p class = "slider__text">Коммерческая недвижимость, квартиры, коттеджи, земельные участки</p>
+            </li>
+            <li class="slide">
+                <h1 class = "slider__title">Взвешеный выбор</h1>
+                <p class = "slider__text">Мы предоставляем весь спектр услуг в сфере недвижимости: продажа и покупка жилья от комнат в коммуналке до элитных коттеджей, от дачных участков до сотен гектар под строительство завода; получение ипотеки, оформление документов</p>
+            </li>
+            <li class="slide">
+                <h1 class = "slider__title">Knowledge   I   Integrity   I   Experience</h1>
+                <p class = "slider__text">Led by one of the region’s top producing agents, our team combines an extensive knowledge of the local real estate market with a wealth of experience to consistently exceed client expectations. Savvy negotiating skills, meticulous attention to detail and dedication to our clients ’goals are top priorities. Establishing lifelong relationships that go beyond the settlement table is how we measure our success.</p>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+<aside class="Side-bar">
+    <ul>
+        <li><a href="#">111</a></li>
+        <li><a href="#">222</a></li>
+        <li><a href="#">333</a></li>
+        <li><a href="#">444</a></li>
+        <li><a href="#">555</a></li>
+    </ul>
+</aside>
+
+
+<main class="Main">
+    <div class="filters-wrapper">
+        <div class="filters">
+            <span class ="site__search">Выберите город:</span>
+            <select>
+                <option value="">Киев</option>
+                <option value="">Одесса</option>
+                <option value="">Харьков</option>
+                <option value="">Львов</option>
+                <option value="">Житомир</option>
+            </select>
+            <button class="accept__btn">Подтвердить</button>
+                <button class="service__type" id=service__type">
+                    <span>Вид услуги</span>
+                    <img src="img/down.svg" width="8" alt="">
+                </button>
+                <div class="service__type-window" id="service__type-window">
+                    <li>
+                        <input type="radio" name="service-type">
+                        <span>Покупка квартиры</span>
+                    </li>
+                    <li>
+                        <input type="radio" name="service-type">
+                        <span>Оренда квартиры</span>
+                    </li>
+                </div>
+                <button class="apartment__rooms-filter">
+                    <span>Количество комнат</span>
+                    <img src="img/down.svg" width="8" alt="">
+                </button>
+                <div class="apartment__rooms-window">
+                    <li>
+                        <input type="checkbox">
+                        <span>Одна комната</span>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <span>Две комнаты</span>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <span>Три комнаты</span>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <span>Четыре комнаты</span>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <span>Пять и больше комнат</span>
+                    </li>
+                </div>
+
+
+            <button class="apartment__price-filter">
+                <span>Цена</span>
+                <img src="img/down.svg" width="8" alt="">
+            </button>
+            <div class="apartment__price-window">
+                <li>
+                    <input type="radio" name="apartment__price">
+                    <span>До 1000000 грн</span>
+                </li>
+                <li>
+                    <input type="radio" name="apartment__price">
+                    <span>До 2000000 грн</span>
+                </li>
+                <li>
+                    <input type="radio" name="apartment__price">
+                    <span>До 3000000 грн</span>
+                </li>
+                <li>
+                    <input type="radio" name="apartment__price">
+                    <span>До 4000000 грн</span>
+                </li>
+                <div>
+                    <input class ="apartment__price-input" type="value" placeholder="1000000">
+                    <span>-</span>
+                    <input class="apartment__price-input" type="value" placeholder="5   000000">
+                    <button>OK</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="map" id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10162.129294302411!2d30.46750033254998!3d50.449811301181356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce83b06d9ee7%3A0x1d170c10bb79676c!2sPolitekhnichnyi%20instytut!5e0!3m2!1sen!2sua!4v1573458813208!5m2!1sen!2sua" allowfullscreen=""></iframe>
+
+        </div>
+    </div>
+
+
+
+    <div class="apartments">
+        <div class ="apartment">
+            <img class ="apartment__image" src="img/gallery-1.jpg" alt="">
+            <div class="apartment__rooms">Количество комнат: 2</div>
+            <div class="apartment__price">Цена: 1000000 грн</div>
+        </div>
+        <div class ="apartment">
+            <img class ="apartment__image" src="img/gallery-2.jpg" alt="">
+            <div class="apartment__rooms">Количество комнат: 2</div>
+            <div class="apartment__price">Цена: 1000000 грн</div>
+        </div>
+        <div class ="apartment">
+            <img class ="apartment__image" src="img/gallery-3.jpg" alt="">
+            <div class="apartment__rooms">Количество комнат: 2</div>
+            <div class="apartment__price">Цена: 1000000 грн</div>
+        </div>
+        <div class ="apartment">
+            <img class ="apartment__image" src="img/gallery-4.jpg" alt="">
+            <div class="apartment__rooms">Количество комнат: 2</div>
+            <div class="apartment__price">Цена: 1000000 грн</div>
+        </div>
+        <div class ="apartment">
+            <img class ="apartment__image" src="img/gallery-1.jpg" alt="">
+            <div class="apartment__rooms">Количество комнат: 2</div>
+            <div class="apartment__price">Цена: 1000000 грн</div>
+        </div>
+        <div class ="apartment">
+            <img class ="apartment__image" src="img/gallery-1.jpg" alt="">
+            <div class="apartment__rooms">Количество комнат: 2</div>
+            <div class="apartment__price">Цена: 1000000 грн</div>
+        </div>
+        <div class ="apartment">
+            <img class ="apartment__image" src="img/gallery-1.jpg" alt="">
+            <div class="apartment__rooms">Количество комнат: 2</div>
+            <div class="apartment__price">Цена: 1000000 грн</div>
+        </div>
+        <div class ="apartment">
+            <img class ="apartment__image" src="img/gallery-1.jpg" alt="">
+            <div class="apartment__rooms">Количество комнат: 2</div>
+            <div class="apartment__price">Цена: 1000000 грн</div>
+        </div>
+        <div class ="apartment">
+            <img class ="apartment__image" src="img/gallery-1.jpg" alt="">
+            <div class="apartment__rooms">Количество комнат: 2</div>
+            <div class="apartment__price">Цена: 1000000 грн</div>
+        </div>
+        <div class ="apartment">
+            <img class ="apartment__image" src="img/gallery-1.jpg" alt="">
+            <div class="apartment__rooms">Количество комнат: 2</div>
+            <div class="apartment__price">Цена: 1000000 грн</div>
+        </div>
+    </div>
+</main>
+
+<section class="Gallery">
+<!--    <div class="gallery__item"><img src="img/gallery-1.jpg" alt=""></div>-->
+<!--    <div class="gallery__item"><img src="img/gallery-2.jpg" alt=""></div>-->
+<!--    <div class="gallery__item"><img src="img/gallery-3.jpg" alt=""></div>-->
+<!--    <div class="gallery__item"><img src="img/gallery-4.jpg" alt=""></div>-->
+<!--    <div class="gallery__item"><img src="img/gallery-5.jpg" alt=""></div>-->
+<!--    <div class="gallery__item"><img src="img/gallery-6.jpg" alt=""></div>-->
+<!--</section>-->
+    <ul class="slider">
+        <li><img class="slider__image" src="img/gallery-1.jpg" alt=""></li>
+        <li><img class="slider__image" src="img/gallery-1.jpg" alt=""></li>
+        <li><img class="slider__image" src="img/gallery-1.jpg" alt=""></li>
+        <li><img class="slider__image" src="img/gallery-1.jpg" alt=""></li>
+        <li><img class="slider__image" src="img/gallery-1.jpg" alt=""></li>
+        <li><img class="slider__image" src="img/gallery-1.jpg" alt=""></li>
+        <li><img class="slider__image" src="img/gallery-1.jpg" alt=""></li>
+    </ul>
+</section>
+
+
+
+
+<section class="Content"></section>
+
+<section class="Comments">
+
+</section>
+
+
+<!--Footer -->
+<footer class="Footer">
+    <div class="footer__inner">
+        <div class="footer__block">
+            <h4 class="footer__title">Location</h4>
+            <address class="footer__address">
+                <p>Peremohy Ave, 37, building 35 (IPSA building)</p>
+                <p>Kiev, Ukraine</p>
+            </address>
+        </div>
+
+        <div class="footer__block">
+            <h4 class="footer__title">Author's contacts</h4>
+            <div class="social social--footer">
+                <a class="social__link" href="https://www.facebook.com" target="_blank">
+                    <img src="img/facebook.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://www.linkedin.com" target ="_blank">
+                    <img src="img/linkedin.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://www.github.com/mrcr0wley" target="_blank">
+                    <img src="img/github.svg" width="18" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer__block">
+            <h4 class="footer__title" id="contacts2">About Author</h4>
+            <div class="footer__text">
+                <p>Good guy.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Copyright-->
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright__text">
+                <div>Copyright © 2020 Real estate agency. All Rights Reserved.</div>
+                <div>Made <span>by Bogdan Volynets</span></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+<script src ="./script/header_slider.js"></script>
+</html>
