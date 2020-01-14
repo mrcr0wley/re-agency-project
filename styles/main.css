@@ -59,25 +59,21 @@ ul, li{
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+
+}
 
 
 .grid-container > * {
-    border: 1px solid red;
     position: relative;
-}
-
-.grid-container > *:after {
-    content:attr(class);
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 130px 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "Header Header Header Header" "Side-bar Main Main Main" "Side-bar Gallery Gallery Gallery" "Side-bar Content Content Content" "Side-bar Comments Comments Comments" "Footer Footer Footer Footer";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "Header Header Header Header" "Side-bar Main Main Main" "Side-bar Gallery Gallery Gallery" "Side-bar Advantages Advantages Advantages" "Side-bar Team Team Team" "Side-bar Comments Comments Comments" "Footer Footer Footer Footer";
 }
 
 .Header { grid-area: Header; }
@@ -88,7 +84,9 @@ ul, li{
 
 .Gallery { grid-area: Gallery; }
 
-.Content { grid-area: Content; }
+.Advantages { grid-area: Advantages; }
+
+.Team { grid-area: Team; }
 
 .Comments { grid-area: Comments; }
 
@@ -105,7 +103,7 @@ ul, li{
 .header__inner {
     display: flex;
     height: 100px;
-    background-color: darkred;
+    background-color: #8b0000;
 }
 
 .logo__img {
@@ -116,40 +114,71 @@ ul, li{
     width: 100%;
 }
 
-ul {
-list-style: none;
 
-}
 
 .header__nav > ul {
     display: flex;
     justify-content: center;
 }
 
-.header__nav ul li a{
+.header__nav > ul > li > a{
     display:flex;
     height: 50px;
     width: 100px;
     align-items: center;
     font-size: 14px;
     color: #ffffff;
-    text-decoration: none;
     text-transform: uppercase;
     transition: all 0.3s ease;
 
 }
 
-.header__nav ul li a:hover {
+.header__nav ul li a:hover, .header__nav li > ul li:hover  {
     transform: scale(1.1);
     transition: all 0.7s ease;
 
 }
 
-.header__nav ul li:not(:last-of-type) a{
+.header__nav > ul > li:not(:last-of-type) > a{
     border-right: 2px solid #fae1a0;
     margin-right: 20px;
 }
 
+/*Sub-menu
+............................................... */
+.header__nav li ul{
+    position:absolute;
+    min-width: 100px;
+    display: none;
+    background: #8b0000;
+}
+
+.header__nav li > ul li{
+    height: 50px;
+    width: auto;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border: 1px solid #9ba99a;
+}
+
+.header__nav li > ul li a{
+    padding: 20px;
+    text-transform: none;
+    background: transparent;
+    color: #ffffff;
+    white-space: nowrap;
+    justify-items: center;
+}
+
+
+.header__nav li:hover > ul{
+    display: block;
+    z-index: 3;
+}
+
+.header__nav li > ul li:hover{
+    background: #454547;
+}
 
 
 
@@ -235,13 +264,14 @@ list-style: none;
     color: #fafafa;
     font-size: 60px;
     text-align: center;
+    padding-top: 200px;
+
 }
 
 .slider__text{
     text-indent: 35px;
     font-size: 25px;
     color: #ffffff;
-    padding: 50px 0;
     text-align:center;
 }
 
@@ -251,8 +281,7 @@ list-style: none;
 /*Side-bar*/
 .Side-bar{
     width: 130px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    background: #8b0000;
 }
 
 
@@ -260,26 +289,41 @@ list-style: none;
 .Side-bar > ul li a{
     display:flex;
     height: 80px;
-    background: cadetblue;
     font-size: 14px;
-    text-decoration: none;
     text-transform: uppercase;
     transition: all 0.3s ease;
+    color: #ffffff;
     border-bottom: 1px solid #000000;
     align-items: center;
-    justify-content: center;
-
-}
-
-.Side-bar > ul li a:hover{
-    color: red;
 }
 
 
 
+.Side-bar > ul li:hover{
+    background: #454547;
+}
 
 
 
+.Side-bar > ul > li{
+    position: relative;
+}
+
+
+.Side-bar li ul{
+    position:absolute;
+    display: block;
+    left: auto;
+    background: #8b0000;
+    right: 0;
+    top: 0;
+}
+
+
+
+.Side-bar li:hover > ul{
+    display: block;
+}
 
 /*Gallery
 .............................*/
@@ -351,71 +395,196 @@ ul.slider li:nth-child(4):hover{
 /*}*/
 
 
-/* Main */
-.filters{
-    padding:24px 0 0 50px;
-    height: 450px;
-    width: 400px;
+
+
+
+/*Advantages
+ ...............................*/
+.advantages{
+    display:flex;
+    flex-wrap: wrap;
+
 }
 
-.filters-wrapper{
+.advantages__item{
+    width: 33.33333%;
+    margin: 25px 0;
+    padding: 0 40px;
+    text-align: center;
+    color:#ffffff;
+    box-sizing: border-box;
+}
+
+.advantages__item:hover{
+    background: #313454;
+    color: #ffffff;
+    transition: all 0.3s ease;
+
+}
+
+.advantages__icon{
+    height: 100px;
+    width: 100px;
+}
+
+.advantages__title{
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.advantages__text{
+    font-size:14px;
+    color:#fafafa;
+}
+
+.team__title{
+    color:#fafafa;
+    text-align: center;
+    font-size: 30px;
+    padding:20px;
+}
+
+.team__inner{;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+
+}
+
+.team__item{
+    width: 25%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.team__photo{
+    display: block;
+    max-height:150px ;
+    height: auto;
+}
+
+.team__name{
+    font-size: 16px;
+    color:#fafafa;
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+
+}
+
+.team__profession{
+    display: inline-block;
+    font-size: 10px;
+    color:#e84545;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.team__description{
+    font-size: 11px;
+    line-height: 1.5;
+    color:#fafafa;
+    margin-bottom: 7px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main */
+.sorting-filters{
     display: flex;
     justify-content: space-between;
+    margin: 40px;
 }
 
-.filters div{
+
+.filters, .sorting{
     display: flex;
-    justify-content: flex-start;
-    margin: 10px;
+    justify-content: center;
+    padding:24px 0 0 50px;
+    height: 50px;
 }
 
-.apartment__rooms-window{
+.filter-group{
+    position: relative;
+}
+
+.filter-control{
+    border: 0;
+    padding-right: 25px;
+    background: #ffffff no-repeat url("../img/down.svg") center right 8px / 8px;
+}
+
+.filter-control.open{
+    background: #ffffff no-repeat url("../img/up.svg") center right 8px / 8px;
+}
+
+
+
+
+
+/*.filters div{*/
+/*    display: flex;*/
+/*    justify-content: flex-start;*/
+/*    margin: 10px;*/
+/*}*/
+
+/*.apartment__rooms-window{*/
+/*    display:none;*/
+/*    position: absolute;*/
+/*    top: 20px;*/
+/*    width: 170px;*/
+/*    height: 120px;*/
+/*    background-color: transparent;*/
+/*    border: 1px solid #ffffff;*/
+/*}*/
+
+.dropdown{
+    display: none;
     position: absolute;
-    top: 80px;
-    left: 160px;
-    width: 170px;
-    height: 120px;
-    background-color: transparent;
-    border: 1px solid #ffffff;
-
+    white-space: nowrap;
+    padding:0 20px;
+    top: 20px;
+    color: #000000;
+    background-color: #fafafa;
 }
 
-.apartment__rooms-window{
-    flex-direction: column;
-}
-
-.service__type-window{
-    display:none;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 170px;
-    height: 45px;
-    background-color: transparent;
-    border: 1px solid #ffffff;
-
-}
-
-.service__type-window{
-    flex-direction: column;
+.dropdown.open{
+    display:block;
 }
 
 
-.apartment__price-window{
-    position: absolute;
-    top: 80px;
-    left: 300px;
-    width: 170px;
-    height: 110px;
-    background-color: transparent;
-    border: 1px solid #ffffff;
-}
 
-.apartment__price-window{
-    flex-direction: column;
-    align-items: flex-start;
+/*.apartment__price-window{*/
+/*    display:none;*/
+/*    position: absolute;*/
+/*    top: 20px;*/
+/*    width: 170px;*/
+/*    height: 110px;*/
+/*    background-color: transparent;*/
+/*    border: 1px solid #ffffff;*/
+/*}*/
 
-}
+/*.apartment__price-window{*/
+/*    flex-direction: column;*/
+/*    align-items: flex-start;*/
+
+/*}*/
 
 .apartment__price-input{
     width: 70px;
@@ -425,20 +594,20 @@ ul.slider li:nth-child(4):hover{
     margin: 0 0 20px 10px;
 }
 
-.map{
-    display: flex;
-    text-align: center;
-    padding: 10px 15px;
-    width: 50%;
-    overflow: hidden;
-}
+/*.map{*/
+/*    display: flex;*/
+/*    text-align: center;*/
+/*    padding: 10px 15px;*/
+/*    width: 50%;*/
+/*    overflow: hidden;*/
+/*}*/
 
-.map iframe{
-    width: 100%;
-    height: 93%;
-    border:0;
-    border-radius: 8px;
-}
+/*.map iframe{*/
+/*    width: 100%;*/
+/*    height: 93%;*/
+/*    border:0;*/
+/*    border-radius: 8px;*/
+/*}*/
 
 
 .apartments{
@@ -468,10 +637,30 @@ ul.slider li:nth-child(4):hover{
     font-size: 20px;
 }
 
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a{
+    display: inline-block;
+    color: #ffffff;
+
+    border: 1px solid #000000;
+    background: #000000;
+    padding: 6px;
+}
+
+.pagination a:hover {
+    background: #e84545;
+    color: #000000;
+    transition: 0.5s;
+}
 
 
-/* Footer
-.............................*/
+
+    /* Footer
+    .............................*/
 
 .footer__inner {
     display: flex;

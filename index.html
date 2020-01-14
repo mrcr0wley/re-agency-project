@@ -13,12 +13,24 @@
         </div>
         <nav class="header__nav">
             <ul>
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="">О нас</a>
+                    <ul>
+                        <li><a href="">Преемущества</a></li>
+                        <li><a href="">Наша команда</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Контакты</a>
+                    <ul>
+                        <li><a href="tel:+88005553535">Call</a></li>
+                        <li><a href="mailto:mr.crowleyit@gmail.com">Mail</a></li>
+                        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Регистрация</a></li>
             </ul>
         </nav>
     </div>
@@ -47,109 +59,177 @@
 
 <aside class="Side-bar">
     <ul>
-        <li><a href="#">111</a></li>
-        <li><a href="#">222</a></li>
-        <li><a href="#">333</a></li>
-        <li><a href="#">444</a></li>
-        <li><a href="#">555</a></li>
+        <li><a href="#">Услуги</a>
+            <ul>
+                <li><a href="#">Покупка квартиры</a></li>
+                <li><a href="#">Оренда квартиры</a></li>
+                <li><a href="#">Юририческое сопровождение</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Добавить объект</a></li>
+        <li><a href="#">Оставить отзыв</a></li>
     </ul>
 </aside>
 
 
 <main class="Main">
-    <div class="filters-wrapper">
+
+    <div class="sorting-filters">
         <div class="filters">
-            <span class ="site__search">Выберите город:</span>
-            <select>
-                <option value="">Киев</option>
-                <option value="">Одесса</option>
-                <option value="">Харьков</option>
-                <option value="">Львов</option>
-                <option value="">Житомир</option>
-            </select>
-            <button class="accept__btn">Подтвердить</button>
-                <button class="service__type" id=service__type">
-                    <span>Вид услуги</span>
-                    <img src="img/down.svg" width="8" alt="">
+            <div class="filter-group">
+                <button class="filter-control">
+                    Выберите город
                 </button>
-                <div class="service__type-window" id="service__type-window">
-                    <li>
-                        <input type="radio" name="service-type">
-                        <span>Покупка квартиры</span>
-                    </li>
-                    <li>
-                        <input type="radio" name="service-type">
-                        <span>Оренда квартиры</span>
-                    </li>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            <label>
+                                <input class="filter" type="radio" name ="city" value="Kyiv" data-param="city">Киев
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="filter" type="radio" name ="city" value="Odessa" data-param="city">Одесса
+                            </label>
+                        <li>
+                            <label>
+                                <input class="filter" type="radio" name ="city" value="Kharkov" data-param="city">Харьков
+                            </label>
+                        </li>
+                    </ul>
                 </div>
-                <button class="apartment__rooms-filter">
-                    <span>Количество комнат</span>
-                    <img src="img/down.svg" width="8" alt="">
+
+
+
+<!--                    <label class>Выберите город:-->
+<!--                        <select class="filter" id="filter-city" data-param="city">-->
+<!--                            <option value="Kyiv">Киев</option>-->
+<!--                            <option value="Odessa">Одесса</option>-->
+<!--                            <option value="Kharkov">Харьков</option>-->
+<!--                        </select>-->
+<!--                    </label>-->
+            </div>
+            <div class="filter-group">
+                <button class="filter-control">
+                    Вид услуги
                 </button>
-                <div class="apartment__rooms-window">
-                    <li>
-                        <input type="checkbox">
-                        <span>Одна комната</span>
-                    </li>
-                    <li>
-                        <input type="checkbox">
-                        <span>Две комнаты</span>
-                    </li>
-                    <li>
-                        <input type="checkbox">
-                        <span>Три комнаты</span>
-                    </li>
-                    <li>
-                        <input type="checkbox">
-                        <span>Четыре комнаты</span>
-                    </li>
-                    <li>
-                        <input type="checkbox">
-                        <span>Пять и больше комнат</span>
-                    </li>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            <label>
+                                <input class="filter" type="radio" name="service-type" value="buy" data-param="type" >
+                                Покупка квартир
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="filter" type="radio" name="service-type" value="rent" data-param="type">
+                                Оренда квартир
+                            </label>
+                        </li>
+                    </ul>
                 </div>
-
-
-            <button class="apartment__price-filter">
-                <span>Цена</span>
-                <img src="img/down.svg" width="8" alt="">
-            </button>
-            <div class="apartment__price-window">
-                <li>
-                    <input type="radio" name="apartment__price">
-                    <span>До 1000000 грн</span>
-                </li>
-                <li>
-                    <input type="radio" name="apartment__price">
-                    <span>До 2000000 грн</span>
-                </li>
-                <li>
-                    <input type="radio" name="apartment__price">
-                    <span>До 3000000 грн</span>
-                </li>
-                <li>
-                    <input type="radio" name="apartment__price">
-                    <span>До 4000000 грн</span>
-                </li>
-                <div>
-                    <input class ="apartment__price-input" type="value" placeholder="1000000">
-                    <span>-</span>
-                    <input class="apartment__price-input" type="value" placeholder="5   000000">
-                    <button>OK</button>
+            </div>
+            <div class="filter-group">
+                <button class="filter-control">
+                    Количество комнат
+                </button>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            <label>
+                                <input class="filter" type="radio" name ="room-amount" value="1" data-param="rooms">Одна комнаты
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="filter" type="radio" name ="room-amount" value="2" data-param="rooms">Две комнаты
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="filter" type="radio" name ="room-amount" value="3" data-param="rooms">Три комнаты
+                            </label>
+                        </li>
+                        <li>
+                        <li>
+                            <label>
+                                <input class="filter" type="radio" name ="room-amount" value="4" data-param="rooms">Четыре комнаты
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="filter" type="radio" name ="room-amount" value="5" data-param="rooms">Пять комнат
+                            </label>
+                        </li>
+                   </ul>
                 </div>
-
+            </div>
+            <div class="filter-group">
+                <button class="filter-control">
+                    Цена
+                </button>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            <label>
+                                <input class="filter" type="radio" name="apartment__price" value="option_1" data-param="price">До 1000000 грн
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="filter" type="radio" name="apartment__price" value="option_2" data-param="price">До 2000000 грн
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="filter" type="radio" name="apartment__price" value="option_3" data-param="price">До 3000000 грн
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="filter" type="radio" name="apartment__price" value="option_4" data-param="price">До 4000000 грн
+                            </label>
+                        </li>
+                    </ul>
+<!--                    <div>-->
+<!--                        <label>-->
+<!--                            <input class ="apartment__price-input filter" type="number" name="apartment__price__min" data-param="price-min" placeholder="1000000">-->
+<!--                        </label>-->
+<!--                        <span>-</span>-->
+<!--                        <label>-->
+<!--                            <input class="apartment__price-input filter" type="number" name="apartment__price__max" data-param="price-max" placeholder="5000000">-->
+<!--                        </label>-->
+<!--                        <button>OK</button>-->
+<!--                    </div>До лучших времен-->
+                </div>
             </div>
 
-        </div>
-        <div class="map" id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10162.129294302411!2d30.46750033254998!3d50.449811301181356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce83b06d9ee7%3A0x1d170c10bb79676c!2sPolitekhnichnyi%20instytut!5e0!3m2!1sen!2sua!4v1573458813208!5m2!1sen!2sua" allowfullscreen=""></iframe>
+
+            <div>
+                <button onclick="updateFilters()" class="btn--filter">filter</button>
+            </div>
+
 
         </div>
+        <div class ="sorting">
+            <label class ="site__search">Сортировать по:
+                <select>
+                    <option value="">количеству комнат</option>
+                    <option value="">цене</option>
+                    <option value="">виду услуг</option>
+                </select>
+            </label>
+        </div>
+<!--        <div class="map" id="map">-->
+<!--            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10162.129294302411!2d30.46750033254998!3d50.449811301181356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce83b06d9ee7%3A0x1d170c10bb79676c!2sPolitekhnichnyi%20instytut!5e0!3m2!1sen!2sua!4v1573458813208!5m2!1sen!2sua" allowfullscreen=""></iframe>-->
+<!--        </div>-->
     </div>
 
 
 
-    <div class="apartments">
+    <div class="apartments" id="apartments">
         <div class ="apartment">
             <img class ="apartment__image" src="img/gallery-1.jpg" alt="">
             <div class="apartment__rooms">Количество комнат: 2</div>
@@ -201,6 +281,17 @@
             <div class="apartment__price">Цена: 1000000 грн</div>
         </div>
     </div>
+    <div class="pagination">
+            <a href="">I<</a>
+            <a href=""><</a>
+            <a href="">i-2</a>
+            <a href="">i-1</a>
+            <a href="">current</a>
+            <a href="">i+1</a>
+            <a href="">i+2</a>
+            <a href="">></a>
+            <a href="">>I</a>
+    </div>
 </main>
 
 <section class="Gallery">
@@ -225,7 +316,186 @@
 
 
 
-<section class="Content"></section>
+    <!--Advantages-->
+<section id="Advantages" class="Advantages">
+    <div class="advantages">
+        <div class="advantages__item">
+            <img class="advantages__icon" src="img/icon-1.svg" alt="">
+            <h4 class="advantages__title">Внимание к мелочам</h4>
+            <div class="advantages__text">Персональное сопровождение нашего клиента</div>
+        </div>
+        <div class="advantages__item">
+            <img class="advantages__icon" src="img/icon-2.svg" alt="">
+            <h4 class="advantages__title">Комуникабельность</h4>
+            <div class="advantages__text">Отзывчивый персонал, телефонный режим 24/7</div>
+        </div>
+        <div class="advantages__item">
+            <img class="advantages__icon" src="img/icon-3.svg" alt="">
+            <h4 class="advantages__title">Протекция</h4>
+            <div class="advantages__text">Юридическое сопровождение дел</div>
+        </div>
+        <div class="advantages__item">
+            <img class="advantages__icon" src="img/icon-4.svg" alt="">
+            <h4 class="advantages__title">Гарантия</h4>
+            <div class="advantages__text">100% Проверенные продавцы</div>
+        </div>
+        <div class="advantages__item">
+            <img class="advantages__icon" src="img/icon-5.svg" alt="">
+            <h4 class="advantages__title">Экономическая выгода</h4>
+            <div class="advantages__text">Самые выгодные предложения на рынке</div>
+        </div>
+        <div class="advantages__item">
+            <img class="advantages__icon" src="img/icon-6.svg" alt="">
+            <h4 class="advantages__title">Опыт</h4>
+            <div class="advantages__text">25 лет успешных сделок</div>
+        </div>
+    </div>
+</section>
+
+<!--Team-->
+<section id="Team" class="team Team">
+    <div class="team__title">
+        <h1>Our Team</h1>
+    </div>
+    <div class="team__inner">
+        <div class="team__item">
+            <img class="team__photo" src="img/worker_1.jpg" alt="">
+            <div class="team__name">Christopher Turk</div>
+            <div class="team__profession">Sales Negotiator</div>
+            <div class="team__description">Experience: 5 years</div>
+            <div class="social">
+                <a class="social__link" href="https://www.facebook.com" target="_blank">
+                    <img src="img/facebook.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://twitter.com">
+                    <img src="img/twitter.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://www.instagram.com">
+                    <img src="img/instagram.svg" width="18" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="team__item">
+            <img class="team__photo" src="img/worker_2.jpg" alt="">
+            <div class="team__name">J.D.</div>
+            <div class="team__profession">CEO</div>
+            <div class="team__description">Experience: 5 years</div>
+            <div class="social">
+                <a class="social__link" href="https://www.facebook.com" target="_blank">
+                    <img src="img/facebook.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://twitter.com" target="_blank">
+                    <img src="img/twitter.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://www.instagram.com" target="_blank">
+                    <img src="img/instagram.svg" width="18" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="team__item">
+            <img class="team__photo" src="img/worker_3.jpg" alt="">
+            <div class="team__name">Chandler Bing</div>
+            <div class="team__profession">Sales Negotiator</div>
+            <div class="team__description">Experience: 5 years</div>
+            <div class="social">
+                <a class="social__link" href="https://www.facebook.com" target="_blank">
+                    <img src="img/facebook.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://twitter.com" target="_blank">
+                    <img src="img/twitter.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://www.instagram.com" target="_blank">
+                    <img src="img/instagram.svg" width="18" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="team__item">
+            <img class="team__photo" src="img/worker_4.jpg" alt="">
+            <div class="team__name">Elliot Reid</div>
+            <div class="team__profession">Sales Negotiator</div>
+            <div class="team__description">Experience: 5 years</div>
+            <div class="social">
+                <a class="social__link" href="https://www.facebook.com" target="_blank">
+                    <img src="img/facebook.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://twitter.com" target="_blank">
+                    <img src="img/twitter.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://www.instagram.com" target="_blank">
+                    <img src="img/instagram.svg" width="18" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="team__item">
+            <img class="team__photo" src="img/worker_5.jpg" alt="">
+            <div class="team__name">Schwarzenegger</div>
+            <div class="team__profession">Boss</div>
+            <div class="team__description">Experience: 50 years</div>
+            <div class="social">
+                <a class="social__link" href="https://www.facebook.com" target="_blank">
+                    <img src="img/facebook.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://twitter.com" target="_blank">
+                    <img src="img/twitter.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://www.instagram.com" target="_blank">
+                    <img src="img/instagram.svg" width="18" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="team__item">
+            <img class="team__photo" src="img/worker_6.jpg" alt="">
+            <div class="team__name">Klitschko</div>
+            <div class="team__profession">director of analytics</div>
+            <div class="team__description">Experience: beginner</div>
+            <div class="social">
+                <a class="social__link" href="https://www.facebook.com" target="_blank">
+                    <img src="img/facebook.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://twitter.com" target="_blank">
+                    <img src="img/twitter.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://www.instagram.com" target="_blank">
+                    <img src="img/instagram.svg" width="18" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="team__item">
+            <img class="team__photo" src="img/worker_7.jpg" alt="">
+            <div class="team__name">Jessica Alba</div>
+            <div class="team__profession">Sales Negotiator</div>
+            <div class="team__description">Experience: 5 years</div>
+            <div class="social">
+                <a class="social__link" href="https://www.facebook.com" target="_blank">
+                    <img src="img/facebook.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://twitter.com" target="_blank">
+                    <img src="img/twitter.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://www.instagram.com" target="_blank">
+                    <img src="img/instagram.svg" width="18" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="team__item">
+            <img class="team__photo" src="img/worker_8.jpg" alt="">
+            <div class="team__name">Janitor</div>
+            <div class="team__profession">Janitor</div>
+            <div class="team__description">Experience: 5 years</div>
+            <div class="social">
+                <a class="social__link" href="https://www.facebook.com" target="_blank">
+                    <img src="img/facebook.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://twitter.com" target="_blank">
+                    <img src="img/twitter.svg" width="18" alt="">
+                </a>
+                <a class="social__link" href="https://www.instagram.com" target="_blank">
+                    <img src="img/instagram.svg" width="18" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="Comments">
 
