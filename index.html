@@ -9,14 +9,16 @@
 <header class="Header">
     <div class="header__inner">
         <div class="header__logo">
+            <a href="#">
             <img class="logo__img" src="img/header__logo.png" alt="">
+            </a>
         </div>
         <nav class="header__nav">
             <ul>
                 <li><a href="">О нас</a>
                     <ul>
-                        <li><a href="">Преемущества</a></li>
-                        <li><a href="">Наша команда</a></li>
+                        <li><a href="#advantages">Преемущества</a></li>
+                        <li><a href="#team">Наша команда</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Контакты</a>
@@ -29,7 +31,7 @@
                     </ul>
                 </li>
                 <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Новинки</a></li>
+                <li><a href="#gallery">Новинки</a></li>
                 <li><a href="#">Регистрация</a></li>
             </ul>
         </nav>
@@ -59,33 +61,135 @@
 
 <aside class="Side-bar">
     <ul>
-        <li><a href="#">Услуги</a>
-            <ul>
-                <li><a href="#">Покупка квартиры</a></li>
-                <li><a href="#">Оренда квартиры</a></li>
-                <li><a href="#">Юририческое сопровождение</a></li>
-            </ul>
-        </li>
-
-        <li><a href="#">Добавить объект</a></li>
+        <li><a href="#service-type">Услуги</a></li>
+        <li><a href="#add-object" id="add_object-visible">Добавить объект</a></li>
         <li><a href="#">Оставить отзыв</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Реклама</a></li>
     </ul>
+
 </aside>
 
 
 <main class="Main">
+    <div class="add-object" id="add-object">
+        <form action="">
+
+            <button type="submit" class="closeModalWindow" id="closeModalWindow"></button>
+
+<!--                <input type="button" value="Search" class="button"/>-->
+<!--                <button class="close-btn">Button</button>-->
+<!--                <img class="close-btn-icon" src="img/close.svg" alt="">-->
+
+
+            <label>Город
+                <select class="add-object__city" name="add-object__city" id="add-object__city">
+                    <option value="Kyiv">Киев</option>
+                    <option value="Odessa">Одесса</option>
+                    <option value="Kharkov">Харьков</option>
+                </select>
+            </label>
+
+            <label>Тип операции:
+                <select name="city" id="add-object__type">
+                    <option value="buy">Продажа</option>
+                    <option value="rent">Оренда</option>
+                </select>
+            </label>
+
+            <label>Количество комнат:
+                <select name="add-object__rooms" id="add-object__rooms">
+                    <option value="1">1</option>
+                    <option value="option_2">2</option>
+                    <option value="option_3">3</option>
+                    <option value="option_4">4</option>
+                </select>
+            </label>
+
+            <label>Цена:
+                <input type="number" name="add-object__price" id="add-object__price" value="1000000" placeholder="Цена">
+            </label>
+
+            <label>Добавить фото:
+                <input type="file" name="add-object__image" id="add-object__image" placeholder="Фото">
+            </label>
+
+            <label>Описание квартиры:
+                <textarea name="add-object__description" id="add-object__description" placeholder=""></textarea>
+            </label>
+
+            <label>
+                <input type="submit" id="add-object_btn" value="Отправить">
+            </label>
+        </form>
+    </div>
+    <div class="search">
+        <div>
+            <h1>Поиск по сайту:</h1>
+        </div>
+        <div>
+            <div>
+                <label>
+                    <input type="text" id="catalog">
+                </label>
+            </div>
+            <div>
+                <ul class="catalog">
+                    <li>one</li>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>three</li>
+                    <li>four</li>
+                    <li>five</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <div class="sorting-filters">
         <div class="filters">
             <div class="filter-group">
-                <button class="filter-control">
+                <button class="filter-control sorting-btn">
                     Выберите город
                 </button>
                 <div class="dropdown">
                     <ul>
                         <li>
                             <label>
-                                <input class="filter" type="radio" name ="city" value="Kyiv" data-param="city">Киев
+                                <input class="filter" type="radio" name ="city" value="Kyiv" data-param="city" checked="checked">Киев
                             </label>
                         </li>
                         <li>
@@ -99,18 +203,8 @@
                         </li>
                     </ul>
                 </div>
-
-
-
-<!--                    <label class>Выберите город:-->
-<!--                        <select class="filter" id="filter-city" data-param="city">-->
-<!--                            <option value="Kyiv">Киев</option>-->
-<!--                            <option value="Odessa">Одесса</option>-->
-<!--                            <option value="Kharkov">Харьков</option>-->
-<!--                        </select>-->
-<!--                    </label>-->
             </div>
-            <div class="filter-group">
+            <div class="filter-group" id="service-type">
                 <button class="filter-control">
                     Вид услуги
                 </button>
@@ -118,7 +212,7 @@
                     <ul>
                         <li>
                             <label>
-                                <input class="filter" type="radio" name="service-type" value="buy" data-param="type" >
+                                <input class="filter" type="radio" name="service-type" value="buy" data-param="type" checked="checked">
                                 Покупка квартир
                             </label>
                         </li>
@@ -137,6 +231,11 @@
                 </button>
                 <div class="dropdown">
                     <ul>
+                        <li>
+                            <label>
+                                <input class="filter" type="radio" name ="room-amount" value="-1" data-param="rooms" checked="checked">Все
+                            </label>
+                        </li>
                         <li>
                             <label>
                                 <input class="filter" type="radio" name ="room-amount" value="1" data-param="rooms">Одна комнаты
@@ -174,22 +273,22 @@
                     <ul>
                         <li>
                             <label>
-                                <input class="filter" type="radio" name="apartment__price" value="option_1" data-param="price">До 1000000 грн
+                                <input class="filter" type="radio" name="apartment__price" value="option_1" data-param="price" checked="checked">От 0 До 1000000 грн
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input class="filter" type="radio" name="apartment__price" value="option_2" data-param="price">До 2000000 грн
+                                <input class="filter" type="radio" name="apartment__price" value="option_2" data-param="price">От 1000000 до 2000000 грн
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input class="filter" type="radio" name="apartment__price" value="option_3" data-param="price">До 3000000 грн
+                                <input class="filter" type="radio" name="apartment__price" value="option_3" data-param="price">От 2000000 до 3000000 грн
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input class="filter" type="radio" name="apartment__price" value="option_4" data-param="price">До 4000000 грн
+                                <input class="filter" type="radio" name="apartment__price" value="option_4" data-param="price">От 3000000 до 4000000 грн
                             </label>
                         </li>
                     </ul>
@@ -208,116 +307,86 @@
 
 
             <div>
-                <button onclick="updateFilters()" class="btn--filter">filter</button>
+                <button onclick="updateFilters()" class="btn--filter">OK</button>
             </div>
 
 
         </div>
         <div class ="sorting">
-            <label class ="site__search">Сортировать по:
-                <select>
-                    <option value="">количеству комнат</option>
-                    <option value="">цене</option>
-                    <option value="">виду услуг</option>
-                </select>
-            </label>
+            <div class="filter-group">
+            <button class="filter-control">
+                Сортировать по:
+            </button>
+            <div class="dropdown">
+                <ul>
+                    <li>
+                        <label class="sort">
+                            <input class="sort" type="radio" name="sorting" onclick ="updateSorting('rooms', 'asc')">Количеству комнат (возрастанию)
+                        </label>
+                    </li>
+                    <li>
+                        <label class="sort">
+                            <input class="sort" type="radio" name="sorting" onclick ="updateSorting('rooms', 'desc')">Количеству комнат (убыванию)
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="sort" type="radio" name="sorting" onclick ="updateSorting('price', 'asc')">Цене (возрастанию)
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input class="sort" type="radio" name="sorting" onclick ="updateSorting('price', 'desc')">Цене (убыванию)
+                        </label>
+                    </li>
+
+                </ul>
+            </div>
+            </div>
         </div>
-<!--        <div class="map" id="map">-->
-<!--            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10162.129294302411!2d30.46750033254998!3d50.449811301181356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce83b06d9ee7%3A0x1d170c10bb79676c!2sPolitekhnichnyi%20instytut!5e0!3m2!1sen!2sua!4v1573458813208!5m2!1sen!2sua" allowfullscreen=""></iframe>-->
-<!--        </div>-->
     </div>
 
 
+    <div class="apartments" id="apartments"></div>
 
-    <div class="apartments" id="apartments">
-        <div class ="apartment">
-            <img class ="apartment__image" src="img/gallery-1.jpg" alt="">
-            <div class="apartment__rooms">Количество комнат: 2</div>
-            <div class="apartment__price">Цена: 1000000 грн</div>
-        </div>
-        <div class ="apartment">
-            <img class ="apartment__image" src="img/gallery-2.jpg" alt="">
-            <div class="apartment__rooms">Количество комнат: 2</div>
-            <div class="apartment__price">Цена: 1000000 грн</div>
-        </div>
-        <div class ="apartment">
-            <img class ="apartment__image" src="img/gallery-3.jpg" alt="">
-            <div class="apartment__rooms">Количество комнат: 2</div>
-            <div class="apartment__price">Цена: 1000000 грн</div>
-        </div>
-        <div class ="apartment">
-            <img class ="apartment__image" src="img/gallery-4.jpg" alt="">
-            <div class="apartment__rooms">Количество комнат: 2</div>
-            <div class="apartment__price">Цена: 1000000 грн</div>
-        </div>
-        <div class ="apartment">
-            <img class ="apartment__image" src="img/gallery-1.jpg" alt="">
-            <div class="apartment__rooms">Количество комнат: 2</div>
-            <div class="apartment__price">Цена: 1000000 грн</div>
-        </div>
-        <div class ="apartment">
-            <img class ="apartment__image" src="img/gallery-1.jpg" alt="">
-            <div class="apartment__rooms">Количество комнат: 2</div>
-            <div class="apartment__price">Цена: 1000000 грн</div>
-        </div>
-        <div class ="apartment">
-            <img class ="apartment__image" src="img/gallery-1.jpg" alt="">
-            <div class="apartment__rooms">Количество комнат: 2</div>
-            <div class="apartment__price">Цена: 1000000 грн</div>
-        </div>
-        <div class ="apartment">
-            <img class ="apartment__image" src="img/gallery-1.jpg" alt="">
-            <div class="apartment__rooms">Количество комнат: 2</div>
-            <div class="apartment__price">Цена: 1000000 грн</div>
-        </div>
-        <div class ="apartment">
-            <img class ="apartment__image" src="img/gallery-1.jpg" alt="">
-            <div class="apartment__rooms">Количество комнат: 2</div>
-            <div class="apartment__price">Цена: 1000000 грн</div>
-        </div>
-        <div class ="apartment">
-            <img class ="apartment__image" src="img/gallery-1.jpg" alt="">
-            <div class="apartment__rooms">Количество комнат: 2</div>
-            <div class="apartment__price">Цена: 1000000 грн</div>
-        </div>
-    </div>
-    <div class="pagination">
-            <a href="">I<</a>
-            <a href=""><</a>
-            <a href="">i-2</a>
-            <a href="">i-1</a>
-            <a href="">current</a>
-            <a href="">i+1</a>
-            <a href="">i+2</a>
-            <a href="">></a>
-            <a href="">>I</a>
-    </div>
+
+<!--    <div class="booking">-->
+<!--        <form>-->
+<!--            <label>с:-->
+<!--                <input type="date" name="from" id="dateFromField">-->
+<!--            </label>-->
+<!--            <label>до:-->
+<!--                <input type="date" name="to" id="dateToField">-->
+<!--            </label>-->
+<!--            <label>-->
+<!--                <input type="submit">-->
+<!--            </label>-->
+<!--        </form>-->
+<!--    </div>-->
+
+    <div class="page-numbers" id="pagination" ></div>
 </main>
 
-<section class="Gallery">
-<!--    <div class="gallery__item"><img src="img/gallery-1.jpg" alt=""></div>-->
-<!--    <div class="gallery__item"><img src="img/gallery-2.jpg" alt=""></div>-->
-<!--    <div class="gallery__item"><img src="img/gallery-3.jpg" alt=""></div>-->
-<!--    <div class="gallery__item"><img src="img/gallery-4.jpg" alt=""></div>-->
-<!--    <div class="gallery__item"><img src="img/gallery-5.jpg" alt=""></div>-->
-<!--    <div class="gallery__item"><img src="img/gallery-6.jpg" alt=""></div>-->
-<!--</section>-->
+<section class="Gallery" id="gallery">
+    <div class="gallery__title">
+        <h1>Новинки</h1>
+    </div>
     <ul class="slider">
         <li><img class="slider__image" src="img/gallery-1.jpg" alt=""></li>
-        <li><img class="slider__image" src="img/gallery-1.jpg" alt=""></li>
-        <li><img class="slider__image" src="img/gallery-1.jpg" alt=""></li>
-        <li><img class="slider__image" src="img/gallery-1.jpg" alt=""></li>
-        <li><img class="slider__image" src="img/gallery-1.jpg" alt=""></li>
-        <li><img class="slider__image" src="img/gallery-1.jpg" alt=""></li>
+        <li><img class="slider__image" src="img/gallery-2.jpg" alt=""></li>
+        <li><img class="slider__image" src="img/gallery-3.jpg" alt=""></li>
+        <li><img class="slider__image" src="img/gallery-4.jpg" alt=""></li>
+        <li><img class="slider__image" src="img/gallery-5.jpg" alt=""></li>
+        <li><img class="slider__image" src="img/gallery-6.jpg" alt=""></li>
         <li><img class="slider__image" src="img/gallery-1.jpg" alt=""></li>
     </ul>
 </section>
 
-
-
-
     <!--Advantages-->
-<section id="Advantages" class="Advantages">
+<section id="advantages" class="Advantages">
+    <div class="advantages__main-title">
+        <h1>Advantages</h1>
+    </div>
     <div class="advantages">
         <div class="advantages__item">
             <img class="advantages__icon" src="img/icon-1.svg" alt="">
@@ -353,7 +422,7 @@
 </section>
 
 <!--Team-->
-<section id="Team" class="team Team">
+<section id="team" class="team Team">
     <div class="team__title">
         <h1>Our Team</h1>
     </div>
@@ -497,24 +566,50 @@
     </div>
 </section>
 
-<section class="Comments">
+<section id ="comments" class="Comments comments">
+    <div class="comments__content">
+        <h2 class="comments__title">Комментарии</h2>
 
+        <div id="comment-field"></div>
+    </div>
+    <div class="comments-wrapper">
+        <div class="comments-wrapper__title">
+            <h3>
+                Оставить комментарий о компании:
+            </h3>
+        </div>
+        <form>
+            <div class="comments-wrapper__form">
+                <label for="comment-name">Имя:
+                    <input required type="text" class="comment-form" id="comment-name" required>
+                </label>
+                <label for="comment-body">Комментарий:
+                    <textarea type="password" class="comment-body" id="comment-body"></textarea>
+                </label>
+            </div>
+
+            <div class="btn-position">
+                <button type="submit" id="comment-add" class="btn">ОК</button>
+            </div>
+        </form>
+    </div>
 </section>
-
 
 <!--Footer -->
 <footer class="Footer">
     <div class="footer__inner">
         <div class="footer__block">
-            <h4 class="footer__title">Location</h4>
+            <h4 class="footer__title">Contacts</h4>
             <address class="footer__address">
                 <p>Peremohy Ave, 37, building 35 (IPSA building)</p>
-                <p>Kiev, Ukraine</p>
+                <p>Kyiv, Ukraine</p>
+                <p>Phone: +8 800 555 35 35</p>
+                <p>Mail: mr.croweyit@gmail.com</p>
             </address>
         </div>
 
         <div class="footer__block">
-            <h4 class="footer__title">Author's contacts</h4>
+            <h4 class="footer__title">Social networks</h4>
             <div class="social social--footer">
                 <a class="social__link" href="https://www.facebook.com" target="_blank">
                     <img src="img/facebook.svg" width="18" alt="">
@@ -529,9 +624,10 @@
         </div>
 
         <div class="footer__block">
-            <h4 class="footer__title" id="contacts2">About Author</h4>
-            <div class="footer__text">
-                <p>Good guy.</p>
+            <h4 class="footer__title">Location</h4>
+                    <div class="map" id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10162.129294302411!2d30.46750033254998!3d50.449811301181356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce83b06d9ee7%3A0x1d170c10bb79676c!2sPolitekhnichnyi%20instytut!5e0!3m2!1sen!2sua!4v1573458813208!5m2!1sen!2sua" allowfullscreen=""></iframe>
+                    </div>
             </div>
         </div>
     </div>

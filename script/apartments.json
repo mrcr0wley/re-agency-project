@@ -1,0 +1,288 @@
+[
+  {
+    "id": 1,
+    "city": "Kyiv",
+    "type": "buy",
+    "rooms": 1,
+    "price": 1000000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 2,
+    "city": "Odessa",
+    "type": "buy",
+    "rooms": 1,
+    "price": 1000000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 3,
+    "city": "Kharkov",
+    "type": "buy",
+    "rooms": 1,
+    "price": 1000000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 4,
+    "city": "Kyiv",
+    "type": "buy",
+    "rooms": 2,
+    "price": 2000000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 5,
+    "city": "Odessa",
+    "type": "buy",
+    "rooms": 2,
+    "price": 2000000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 6,
+    "city": "Kharkov",
+    "type": "buy",
+    "rooms": 2,
+    "price": 2000000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 7,
+    "city": "Kyiv",
+    "type": "buy",
+    "rooms": 3,
+    "price": 3000000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 8,
+    "city": "Odessa",
+    "type": "buy",
+    "rooms": 3,
+    "price": 3000000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 9,
+    "city": "Kharkov",
+    "type": "buy",
+    "rooms": 3,
+    "price": 3000000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 10,
+    "city": "Kyiv",
+    "type": "buy",
+    "rooms": 4,
+    "price": 4000000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 11,
+    "city": "Odessa",
+    "type": "buy",
+    "rooms": 4,
+    "price": 4000000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 12,
+    "city": "Kharkov",
+    "type": "buy",
+    "rooms": 4,
+    "price": 4000000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 13,
+    "city": "Kyiv",
+    "type": "buy",
+    "rooms": 1,
+    "price": 1100000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 14,
+    "city": "Odessa",
+    "type": "buy",
+    "rooms": 1,
+    "price": 1100000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 15,
+    "city": "Kharkov",
+    "type": "buy",
+    "rooms": 1,
+    "price": 1100000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 16,
+    "city": "Kyiv",
+    "type": "buy",
+    "rooms": 2,
+    "price": 2100000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 17,
+    "city": "Odessa",
+    "type": "buy",
+    "rooms": 2,
+    "price": 2100000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 18,
+    "city": "Kharkov",
+    "type": "buy",
+    "rooms": 2,
+    "price": 2100000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 19,
+    "city": "Kyiv",
+    "type": "buy",
+    "rooms": 3,
+    "price": 3100000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 20,
+    "city": "Odessa",
+    "type": "buy",
+    "rooms": 3,
+    "price": 3100000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 21,
+    "city": "Kharkov",
+    "type": "buy",
+    "rooms": 3,
+    "price": 3100000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 22,
+    "city": "Kyiv",
+    "type": "buy",
+    "rooms": 4,
+    "price": 4100000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 23,
+    "city": "Odessa",
+    "type": "buy",
+    "rooms": 4,
+    "price": 4100000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 24,
+    "city": "Kharkov",
+    "type": "buy",
+    "rooms": 4,
+    "price": 4100000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 25,
+    "city": "Kharkov",
+    "type": "rent",
+    "rooms": 4,
+    "price": 4000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+
+
+
+
+
+
+  {
+    "id": 26,
+    "city": "Kyiv",
+    "type": "buy",
+    "rooms": 1,
+    "price": 1100010,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 27,
+    "city": "Kyiv",
+    "type": "buy",
+    "rooms": 1,
+    "price": 1102000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 28,
+    "city": "Kyiv",
+    "type": "buy",
+    "rooms": 1,
+    "price": 1102000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 29,
+    "city": "Kyiv",
+    "type": "buy",
+    "rooms": 1,
+    "price": 1103000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 30,
+    "city": "Kyiv",
+    "type": "buy",
+    "rooms": 1,
+    "price": 1100011,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  },
+  {
+    "id": 31,
+    "city": "Kyiv",
+    "type": "rent",
+    "rooms": 1,
+    "price": 5000,
+    "description": "Крутая квартира",
+    "gallery": "https://placehold.it/100x100"
+  }
+
+]
