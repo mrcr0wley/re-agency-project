@@ -215,7 +215,7 @@ textarea{
     font-size: 40px;
     padding: 40px;
     box-sizing: border-box;
-    background: #333;
+    background-size: cover;
     color: #fff;
 }
 
@@ -795,4 +795,91 @@ ul.slider li:nth-child(4):hover{
 
 .social--footer {
     justify-content: center;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .menu {
+        display: none;
+    }
+
+    .device-nav {
+        display: block;
+    }
+
+    .main{
+        background-size:auto 300px;
+        padding-top: 0;
+    }
+
+    .main__title{
+        font-size: 30px;
+    }
+
+    .main__subtitle{
+        font-size: 18px;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .advantages__item{
+        width: 50%;
+        margin: 0;
+        padding: 10px;
+    }
+
+
+    .team__title{
+        font-size: 20px;
+        margin-left:10px;
+    }
+
+    .team__name{
+        font-size: 14px;
+    }
+
+    .team__profession{
+        font-size: 8px;
+    }
+
+    .team__description{
+        font-size: 15px;
+    }
+
+
+    .team__item{
+        width: 40%;
+        margin-right: 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .feedback{
+        display: block;
+    }
+
+    .map{
+        width: 320px;
+        padding: 0;
+    }
+
+    .contact-form{
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+.copyright{
+    font-size: 8px;
+    line-height: 1;
 }
