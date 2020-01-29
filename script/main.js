@@ -292,7 +292,7 @@ let sortingOrder = 'asc';
 let comments = [];
 let bookedData = [];
 
-window.onload = function  () {
+window.onload = function() {
     initSlider();
     initFilters();
     loadAddedApartment();
