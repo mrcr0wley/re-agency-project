@@ -282,6 +282,7 @@ let defaultApartments = [
 
 ];
 
+
 const list_element = document.getElementById('apartments');
 const pagination_element = document.getElementById('pagination');
 
