@@ -95,10 +95,11 @@ textarea{
 
 .Footer { grid-area: Footer; }
 
-/* Header */
+/* Header
+..............................................................*/
 
 .Header {
-    height: 690px;
+    height: 760px;
     width: 100%;
 }
 
@@ -151,7 +152,7 @@ textarea{
 }
 
 /*Sub-menu
-............................................... */
+.............................................................. */
 .header__nav li ul{
     position:absolute;
     min-width: 100px;
@@ -187,7 +188,7 @@ textarea{
 
 #header__slides {
     position: relative;
-    height: 690px;
+    height: 760px;
     padding: 0;
     margin: 0;
 }
@@ -252,7 +253,7 @@ textarea{
     color: #fafafa;
     font-size: 60px;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 300px;
 }
 
 .slider__text{
@@ -262,7 +263,176 @@ textarea{
     text-align:center;
 }
 
-/*Side-bar*/
+/* Main */
+
+/*add-object*/
+
+.add-object{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left:50%;
+    margin-left:-250px;
+}
+
+.add-object form{
+    background: url("../img/add-object-bg.jpg");
+    background-size: cover;
+    width: 470px;
+    height: 370px;
+}
+
+.add-object form label{
+    display: block;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 20px;
+}
+
+.add-object__city{
+    margin-top:15px;
+}
+
+.closeModalWindow {
+    position: absolute;
+    right:0;
+    background:url("../img/close.svg") no-repeat;
+    cursor:pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.add-object form label textarea{
+    width: 100%;
+    height: 80px;
+    background: none;
+    color:#000000;
+    font-size: 18px;
+    margin-top: 6px;
+    background: #fafafa;
+}
+
+.sorting-filters{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters, .sorting{
+    display: flex;
+    justify-content: center;
+    padding:24px 0 0 50px;
+    height: 50px;
+}
+
+.filter-group{
+    position: relative;
+}
+
+.filter-control{
+    border: 0;
+    padding-right: 25px;
+    background: #ffffff no-repeat url("../img/down.svg") center right 8px / 8px;
+}
+
+.filter-control.open{
+    background: #ffffff no-repeat url("../img/up.svg") center right 8px / 8px;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+    padding:0 20px;
+    top: 20px;
+    color: #000000;
+    background-color: #fafafa;
+}
+
+.dropdown.open{
+    display:block;
+}
+
+.apartment__price-input{
+    width: 70px;
+}
+
+.filters button{
+    margin: 0 0 20px 10px;
+}
+
+.sorting{
+    margin-right: 300px;
+}
+
+.apartments{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.apartment__description {
+    word-break: break-all;
+}
+
+.apartment{
+    width: 45%;
+    margin: 10px;
+
+    padding-bottom: 20px;
+    border: 1px solid #808080;
+}
+
+.apartment__image{
+    width: 100%;
+}
+
+.booking{
+    display:none;
+}
+
+/*pagination*/
+
+.page-numbers{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-numbers button{
+    width: 50px;
+    height: 50px;
+    appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #44AAEE;
+    margin: 5px;
+    transition: 0.4s;
+    color: #ffffff;
+    font-size: 18px;
+    text-shadow:  0 0 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.page-numbers button:hover{
+    background-color: #44EEAA;
+}
+
+.page-numbers button.active{
+    background-color: #44EEAA;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+
+}
+
+/*Side-bar
+................................................*/
+
 .Side-bar{
     width: 130px;
 }
@@ -277,6 +447,7 @@ textarea{
     border-bottom: 1px solid #000000;
     border-right: 1px solid #000000;
     align-items: center;
+    text-align: center;
     justify-content: center;
 }
 
@@ -289,7 +460,7 @@ textarea{
 }
 
 /*Gallery
-.............................*/
+............................................................*/
 .Gallery{
     margin-top:100px;
 }
@@ -316,7 +487,7 @@ ul.slider img{
 }
 
 ul.slider li:hover{
-    width: 450px; box-shadow: 1px 3px 15px #4cbcd9;
+    width: 400px; box-shadow: 1px 3px 15px #4cbcd9;
     transition: all 1s;
 }
 
@@ -337,10 +508,12 @@ ul.slider li:nth-child(4):hover{
  ...............................*/
 .advantages{
     display:flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .advantages__item{
+    justify-content: center;
     width: 33.33333%;
     margin: 25px 0;
     padding: 0 40px;
@@ -378,7 +551,8 @@ ul.slider li:nth-child(4):hover{
     padding:20px;
 }
 
-/*Team*/
+/*Team
+..........................................................*/
 .team__inner{;
     display: flex;
     justify-content: center;
@@ -428,28 +602,47 @@ ul.slider li:nth-child(4):hover{
 .comments{
     display: flex;
     justify-content: space-between;
+
 }
 
 .comments__content{
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .comments__title{
     text-align: center;
+    padding: 30px 0;
 }
 
 .comment-field{
+    display: inline-block;
+    justify-content: center;
     height: 100px;
 }
 
-.comment-body{
+.comment-block{
+    margin:0 0 50px 50px;
+    border: 3px ridge #000000;
+    background: #fafafa;
+    color: #000000;
+
+}
+
+.time-display{
+    text-align: right;
+    padding-right: 7px;
+    font-style: italic;
+}
+
+.comment-body, .comment-name{
     max-width: 500px;
-    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .comments-wrapper{
-    width: 250px;
-    padding:15px;
+    width: 350px;
+    padding: 30px;
 }
 
 .comments-wrapper__title{
@@ -473,239 +666,9 @@ ul.slider li:nth-child(4):hover{
     font-size: 10px;
 }
 
-/* Main */
 
-/*add-object*/
-
-.add-object{
-    display: none;
-    position: absolute;
-    z-index: 2;
-    left:50%;
-    margin-left:-250px;
-}
-
-.add-object form{
-    background: url("../img/add-object-bg.jpg");
-    background-size: cover;
-    width: 470px;
-    height: 370px;
-}
-
-.add-object form label{
-    display: block;
-    color: #fafafa;
-    text-transform: uppercase;
-    font-size: 14px;
-    margin: 20px;
-}
-
-.add-object__city{
-    margin-top:15px;
-}
-
-.closeModalWindow {
-    position: absolute;
-    right:0;
-    background:url("../img/close.svg") no-repeat;
-    cursor:pointer;
-    width: 30px;
-    height: 30px;
-    border: none;
-}
-
-/*.closeModalWindow{*/
-/*    width: 14px;*/
-/*    height: 14px;*/
-/*    background: url("../img/close.svg") no-repeat 14px;*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    right: 0;*/
-/*    border: none;*/
-/*    outline: none;*/
-/*    cursor: pointer;*/
-/*    color: white;*/
-/*}*/
-
-/*.closeModalWindow:before{*/
-/*    content: url("../img/close.svg");*/
-/*    background: no-repeat 14px;*/
-/*}*/
-
-
-/*.button {*/
-/*    background: url('../img/close.svg') no-repeat 15px;*/
-/*    cursor: pointer;*/
-/*    border: none;*/
-/*}*/
-
-/*.close-btn{*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    transform: translate(-50%, -50%);*/
-/*    -ms-transform: translate(-50%, -50%);*/
-/*    background-color: #555;*/
-/*    color: white;*/
-/*    font-size: 16px;*/
-/*    padding: 12px 24px;*/
-/*    border: none;*/
-/*    cursor: pointer;*/
-/*    border-radius: 5px;*/
-/*}*/
-
-/*.close-btn-icon {*/
-/*    height: 10px;*/
-/*    width: 10px;*/
-/*}*/
-
-
-
-
-
-
-.add-object form label textarea{
-    width: 100%;
-    height: 80px;
-    background: none;
-    color:#000000;
-    font-size: 18px;
-    margin-top: 6px;
-    background: #fafafa;
-}
-
-/*Search*/
-.catalog li.hide{
-    display: none;
-}
-
-.search{
-    display: flex;
-    justify-content: center;
-}
-
-.search > div{
-    padding: 15px;
-}
-
-.search div:nth-child(2){
-    padding-top: 23px;
-}
-
-.sorting-filters{
-    display: flex;
-    justify-content: space-between;
-    margin: 40px;
-}
-
-.filters, .sorting{
-    display: flex;
-    justify-content: center;
-    padding:24px 0 0 50px;
-    height: 50px;
-}
-
-.filter-group{
-    position: relative;
-}
-
-.filter-control{
-    border: 0;
-    padding-right: 25px;
-    background: #ffffff no-repeat url("../img/down.svg") center right 8px / 8px;
-}
-
-.filter-control.open{
-    background: #ffffff no-repeat url("../img/up.svg") center right 8px / 8px;
-}
-
-.dropdown{
-    display: none;
-    position: absolute;
-    white-space: nowrap;
-    padding:0 20px;
-    top: 20px;
-    color: #000000;
-    background-color: #fafafa;
-}
-
-.dropdown.open{
-    display:block;
-}
-
-.apartment__price-input{
-    width: 70px;
-}
-
-.filters button{
-    margin: 0 0 20px 10px;
-}
-
-.sorting{
-    margin-right: 140px;
-}
-
-.apartments{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.apartment{
-    width: 45%;
-    margin: 10px;
-
-    padding-bottom: 20px;
-    border: 1px solid #808080;
-}
-
-.apartment__image{
-    width: 100%;
-    background-size: cover;
-}
-
-.booking{
-    display:none;
-}
-
-/*pagination*/
-
-.page-numbers{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.page-numbers button{
-    width: 50px;
-    height: 50px;
-    appearance: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: #44AAEE;
-    margin: 5px;
-    transition: 0.4s;
-    color: #ffffff;
-    font-size: 18px;
-    text-shadow:  0 0 4px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-}
-
-.page-numbers button:hover{
-    background-color: #44EEAA;
-}
-
-.page-numbers button.active{
-    background-color: #44EEAA;
-    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
-
-}
-
-    /* Footer
-    .............................*/
+/* Footer
+...........................................*/
 
 .footer__inner {
     display: flex;
@@ -777,6 +740,7 @@ ul.slider li:nth-child(4):hover{
 
 .social{
     display: flex;
+    margin: 0 0 70px -14px;
 }
 
 .social__link{
@@ -799,14 +763,270 @@ ul.slider li:nth-child(4):hover{
 
 
 
+/*Device menu
+....................................................*/
+.device-nav{
+    display: none;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 40px;
+    font-family: Raleway, sans-serif;
+    z-index: 10;
+}
+
+#check-menu{
+    display: none;
+}
+
+.device-nav label{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 40px;
+}
+
+.burger-line{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    transition: .5s all;
+}
+
+.second, .third{
+    top: 18px;
+}
+
+.fourth{
+    top: 28px;
+}
+
+.main-menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.main-menu a{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-top: 1px solid #e84545;
+}
+
+.main-menu a:last-child{
+    border-bottom: 1px solid #e84545;
+
+}
+
+.main-menu a:hover{
+    background-color: rgba(0,0,0,.9);
+}
+
+#check-menu:checked ~ .main-menu{
+    max-height: 500px;
+    font-size: 16px;
+}
+
+#check-menu:checked ~ .first{
+    display: none;
+}
+
+#check-menu:checked ~ .second{
+    transform: rotate(45deg);
+}
+
+#check-menu:checked ~ .third{
+    transform: rotate(-45deg);
+}
+
+#check-menu:checked ~ .fourth{
+    display: none;
+}
+
+/*Компенсируем фиксед хедер */
+.fixed-compensator {
+    padding-top: 70px;
+    margin-top: -70px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}
+
+/*Media
+...........................................................................*/
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+    .slider__title{
+        font-size: 30px;
+        padding-top: 200px;
+    }
+
+    .slider__text{
+        font-size: 20px;
+        text-align:center;
+    }
+
+    .sorting-filters {
+        margin: 20px 0;
+        display: block;
+    }
+
+    .filter-control {
+        height: 20px;
+        padding: 0;
+        width: 120px;
+        font-size: 10px;
+    }
+
+    .filters {
+        padding: 0;
+        justify-content: normal;
+    }
+
+    .sorting {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 0 0 10px;
+        padding: 0;
+    }
+
+    .dropdown {
+        padding: 0 10px;
+        font-size: 10px;
+        min-width: 170px;
+        z-index: 1;
+    }
+
+    .comment-block{
+        width: 300px;
+    }
+
+}
+
+@media only screen and (min-width : 400px) and (max-width : 767px){
+
+    .slider__title{
+        font-size: 25px;
+        padding-top: 150px;
+    }
+
+    .slider__text{
+        font-size: 16px;
+        text-align:center;
+    }
+    .sorting-filters {
+        margin: 5px;
+        display: block;
+    }
+
+    .filter-control {
+        height: 20px;
+        padding: 0;
+        width: 120px;
+        font-size: 10px;
+    }
+
+    .filters {
+        display: inline-block;
+        padding: 0;
+        justify-content: normal;
+
+    }
+
+    .sorting {
+        display: flex;
+        justify-content: flex-start;
+        margin: 10px;
+        padding: 0;
+    }
+
+    .Side-bar{
+        width: 90px;
+    }
+
+    .dropdown {
+        padding: 0 10px;
+        font-size: 10px;
+        min-width: 170px;
+        z-index: 1;
+    }
+
+    .apartment{
+        width: 100%;
+        word-wrap: break-word;
+        overflow-y: scroll;
+    }
+
+    .Gallery{
+        margin-top: 5px;
+    }
+
+    .gallery__title{
+        font-size: 20px;
+    }
+
+    ul.slider img{
+        width: 300px;
+        height: 200px;
+    }
+
+    .advantages__main-title{
+        font-size: 20px;
+    }
+
+    .comments{
+        display: block;
+    }
 
 
+    .comment-block{
+        margin: 5px;
+        border: 1px solid #000000;
+        max-width: 200px
+    }
+
+    .comments-wrapper{
+        padding: 25px 5px 20px 5px;
+        max-width: 200px
+    }
+
+    .advantages__item{
+        width: 50%;
+        padding: 0;
+    }
+
+    .advantages__icon{
+        height: 60px;
+        width: 60px;
+    }
+
+    .advantages__title, .advantages__text{
+        font-size: 10px;
+    }
 
 
-
-@media (min-width: 320px) and (max-width: 767px) {
-
-    .menu {
+    .header__nav {
         display: none;
     }
 
@@ -814,72 +1034,28 @@ ul.slider li:nth-child(4):hover{
         display: block;
     }
 
-    .main{
-        background-size:auto 300px;
-        padding-top: 0;
-    }
-
-    .main__title{
-        font-size: 30px;
-    }
-
-    .main__subtitle{
-        font-size: 18px;
-    }
-
-    .hide{
-        display: none;
-    }
-
-    .advantages__item{
-        width: 50%;
-        margin: 0;
-        padding: 10px;
-    }
-
-
-    .team__title{
-        font-size: 20px;
-        margin-left:10px;
-    }
-
-    .team__name{
-        font-size: 14px;
-    }
-
-    .team__profession{
-        font-size: 8px;
-    }
-
-    .team__description{
-        font-size: 15px;
-    }
-
-
     .team__item{
-        width: 40%;
+        width: 50%;
         margin-right: 0;
         padding: 10px;
         box-sizing: border-box;
     }
 
-    .feedback{
-        display: block;
+    .team__title{
+        font-size: 20px;
     }
 
-    .map{
-        width: 320px;
+    .team__name{
+        font-size: 12px;
+    }
+
+    .team__profession{
+        font-size: 9px;
+    }
+
+    .footer__block{
+        font-size: 10px;
         padding: 0;
     }
-
-    .contact-form{
-        width: 100%;
-        justify-content: center;
-    }
-
 }
 
-.copyright{
-    font-size: 8px;
-    line-height: 1;
-}

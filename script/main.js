@@ -7,7 +7,7 @@ let defaultApartments = [
         rooms: 1,
         price: 1000000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-1.jpg"
     },
     {
         id: 2,
@@ -16,7 +16,7 @@ let defaultApartments = [
         rooms: 1,
         price: 1000000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-2.jpg"
     },
     {
         id: 3,
@@ -25,7 +25,7 @@ let defaultApartments = [
         rooms: 1,
         price: 1000000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-3.jpg"
     },
     {
         id: 4,
@@ -34,7 +34,7 @@ let defaultApartments = [
         rooms: 2,
         price: 2000000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-4.jpg"
     },
     {
         id: 5,
@@ -43,7 +43,7 @@ let defaultApartments = [
         rooms: 2,
         price: 2000000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-5.jpg"
     },
     {
         id: 6,
@@ -52,7 +52,7 @@ let defaultApartments = [
         rooms: 2,
         price: 2000000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-6.jpg"
     },
     {
         id: 7,
@@ -61,7 +61,7 @@ let defaultApartments = [
         rooms: 3,
         price: 3000000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-1.jpg"
     },
     {
         id: 8,
@@ -70,7 +70,7 @@ let defaultApartments = [
         rooms: 3,
         price: 3000000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-2.jpg"
     },
     {
         id: 9,
@@ -79,7 +79,7 @@ let defaultApartments = [
         rooms: 3,
         price: 3000000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-3.jpg"
     },
     {
         id: 10,
@@ -88,7 +88,7 @@ let defaultApartments = [
         rooms: 4,
         price: 4000000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-4.jpg"
     },
     {
         id: 11,
@@ -97,7 +97,7 @@ let defaultApartments = [
         rooms: 4,
         price: 4000000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-5.jpg"
     },
     {
         id: 12,
@@ -106,7 +106,7 @@ let defaultApartments = [
         rooms: 4,
         price: 4000000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-6.jpg"
     },
     {
         id: 13,
@@ -115,7 +115,7 @@ let defaultApartments = [
         rooms: 1,
         price: 1100000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-1.jpg"
     },
     {
         id: 14,
@@ -124,7 +124,7 @@ let defaultApartments = [
         rooms: 1,
         price: 1100000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-2.jpg"
     },
     {
         id: 15,
@@ -133,7 +133,7 @@ let defaultApartments = [
         rooms: 1,
         price: 1100000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-3.jpg"
     },
     {
         id: 16,
@@ -142,7 +142,7 @@ let defaultApartments = [
         rooms: 2,
         price: 2100000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-4.jpg"
     },
     {
         id: 17,
@@ -151,7 +151,7 @@ let defaultApartments = [
         rooms: 2,
         price: 2100000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-5.jpg"
     },
     {
         id: 18,
@@ -160,7 +160,7 @@ let defaultApartments = [
         rooms: 2,
         price: 2100000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-6.jpg"
     },
     {
         id: 19,
@@ -169,7 +169,7 @@ let defaultApartments = [
         rooms: 3,
         price: 3100000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-1.jpg"
     },
     {
         id: 20,
@@ -178,7 +178,7 @@ let defaultApartments = [
         rooms: 3,
         price: 3100000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-2.jpg"
     },
     {
         id: 21,
@@ -187,7 +187,7 @@ let defaultApartments = [
         rooms: 3,
         price: 3100000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-3.jpg"
     },
     {
         id: 22,
@@ -196,7 +196,7 @@ let defaultApartments = [
         rooms: 4,
         price: 4100000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-4.jpg"
     },
     {
         id: 23,
@@ -205,7 +205,7 @@ let defaultApartments = [
         rooms: 4,
         price: 4100000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-5.jpg"
     },
     {
         id: 24,
@@ -214,7 +214,7 @@ let defaultApartments = [
         rooms: 4,
         price: 4100000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-6.jpg"
     },
     {
         id: 25,
@@ -223,14 +223,8 @@ let defaultApartments = [
         rooms: 4,
         price: 4000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-1.jpg"
     },
-
-
-
-
-
-
     {
         id: 26,
         city: "Kyiv",
@@ -238,7 +232,7 @@ let defaultApartments = [
         rooms: 1,
         price: 1100010,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-2.jpg"
     },
     {
         id: 27,
@@ -247,7 +241,7 @@ let defaultApartments = [
         rooms: 1,
         price: 1102000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-3.jpg"
     },
     {
         id: 28,
@@ -256,7 +250,7 @@ let defaultApartments = [
         rooms: 1,
         price: 1102000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-4.jpg"
     },
     {
         id: 29,
@@ -265,7 +259,7 @@ let defaultApartments = [
         rooms: 1,
         price: 1103000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-5.jpg"
     },
     {
         id: 30,
@@ -274,7 +268,7 @@ let defaultApartments = [
         rooms: 1,
         price: 1100011,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-6.jpg"
     },
     {
         id: 31,
@@ -283,7 +277,7 @@ let defaultApartments = [
         rooms: 1,
         price: 5000,
         description: "Крутая квартира",
-        gallery: "https://placehold.it/100x100"
+        gallery: "img/gallery-1.jpg"
     },
 
 ];
@@ -306,11 +300,7 @@ window.onload = function  () {
     DisplayList(sorting(apartments), list_element, rows, current_page);
     updateFilters();
     loadComments();
-
     loadBookedData();
-
-
-    // fillDates(); /////////
 };
 
 function initSlider(){
@@ -417,7 +407,6 @@ function filterApartment(apartment, filter) {
 
 }
 
-//
 function createApartment(apartment){
     let newApartmentContent = createElement("div", "apartment");
     newApartmentContent.setAttribute('data-id', apartment.id);
@@ -452,6 +441,7 @@ function createApartment(apartment){
     priceData.appendChild(priceDataNode);
     descriptionData.appendChild(descriptionDataNode);
 
+
 //booking
     if(apartment.type == 'rent'){
         newApartmentContent.appendChild(bookingBtn);
@@ -459,17 +449,17 @@ function createApartment(apartment){
 
 
     let bookingBlock = createElement("div", "booking");
-    let bookingBlockForm = createElement("form", "bookingBlockForm");
-    let bookingBlockFormLabelFrom = createElement("label", "bookingBlockFormLabelFrom");
-    let bookingBlockFormLabelFromInput  = createElement("input", "bookingBlockFormLabelFromInput");
+    let bookingBlockForm = createElement("form", "booking-form");
+    let bookingBlockFormLabelFrom = document.createElement("label");
+    let bookingBlockFormLabelFromInput  = createElement("input", "booking-from");
     bookingBlockFormLabelFromInput.type = "date";
     bookingBlockFormLabelFromInput.name = "from";
-    let bookingBlockFormLabelTo = createElement("label", "bookingBlockFormLabelTo");
-    let bookingBlockFormLabelToInput  = createElement("input", "bookingBlockFormLabelToInput");
+    let bookingBlockFormLabelTo = document.createElement("label");
+    let bookingBlockFormLabelToInput  = createElement("input", "booking-to");
     bookingBlockFormLabelToInput.type = "date";
     bookingBlockFormLabelToInput.name = "to";
-    let bookingBlockFormLabelButton = createElement("label", "bookingBlockFormLabelButton");
-    let bookingBlockFormLabelButtonSubmit  = createElement("input");
+    let bookingBlockFormLabelButton = document.createElement("label");
+    let bookingBlockFormLabelButtonSubmit  = document.createElement("input");
     bookingBlockFormLabelButtonSubmit.type = "submit";
 
 
@@ -489,8 +479,8 @@ function createApartment(apartment){
 
     bookingBlockFormLabelButtonSubmit.addEventListener('click', function (event) {
         event.preventDefault();
-        let bookedDataPeriodFrom = this.closest('.apartment').getElementsByClassName("bookingBlockFormLabelFromInput")[0];
-        let bookedDataPeriodTo = this.closest('.apartment').getElementsByClassName("bookingBlockFormLabelToInput")[0];
+        let bookedDataPeriodFrom = this.closest('.apartment').getElementsByClassName("booking-from")[0];
+        let bookedDataPeriodTo = this.closest('.apartment').getElementsByClassName("booking-to")[0];
 
 
 
@@ -504,19 +494,7 @@ function createApartment(apartment){
         saveBookedData();
 
         alert("Вы успешно збронировали квартиру");
-
-
-
     });
-
-   // console.log(bookingBlock.parentElement.cityData.value); ??????? JSON.stringify
-
-
-
-
-
-
-
 
 return newApartmentContent;
 }
@@ -529,6 +507,42 @@ function loadBookedData(){
     if(localStorage.getItem("bookedData")) bookedData = JSON.parse(localStorage.getItem("bookedData"));
 }
 
+function fillDates() {
+    const dateFrom = document.getElementsByClassName('booking-from');
+    const dateTo = document.getElementsByClassName('booking-to');
+    const today = new Date().toISOString().substr(0, 10);
+    console.log(dateFrom);
+    for(let elem of dateFrom){
+        console.log(elem);
+        elem.value = today;
+        elem.setAttribute('min',today);
+        elem.addEventListener('change',function(e){
+            dateValidator(e);
+        });
+    }
+    for(let elem of dateTo){
+        elem.value = today;
+        elem.setAttribute('max','2025-12-12');
+        elem.addEventListener('change',function(e){
+            dateValidator(e);
+        });
+    }
+
+}
+
+function dateValidator(e) {
+    const dateFrom = e.target.closest('.booking').getElementsByClassName('booking-from')[0];
+    const dateTo = e.target.closest('.booking').getElementsByClassName('booking-to')[0];
+    const today = new Date().toISOString().substr(0, 10);
+    dateTo.setAttribute('min', dateFrom.value);
+    if (Date.parse(dateFrom.value) < Date.parse(today)) {
+        dateFrom.value = today;
+    }
+    if (Date.parse(dateTo.value) < Date.parse(dateFrom.value)) {
+        dateTo.value = dateFrom.value;
+    }
+
+}
 
 // Сортировка
 function updateSorting(param, order) {
@@ -543,7 +557,6 @@ function sorting(apartments){
     });
     return apartments;
 }
-
 
 // Comments
 document.getElementById("comment-add").onclick = function(event){
@@ -573,10 +586,6 @@ function loadComments(){
     showComments();
 }
 
-
-
-
-//
 function createCommentBlock(item) {
 
     let commentBlock = createElement('div', 'comment-block');
@@ -604,27 +613,12 @@ function showComments(){
 
     comments.forEach((item) =>{
         commentField.appendChild(createCommentBlock(item));
-
         });
 }
 
 
-
-
-//
-// function showComments (){
-//     let commentField = document.getElementById('comment-field');
-//     let out = '';
-//     comments.forEach(function(item){
-//         out += `<p class="time-display"><em>${timeConverter(item.time)}</em></p>`;
-//         out += `<p>${item.name}</p>`;
-//         out += `<p>${item.body}</p>`;
-//     });
-//     commentField.innerHTML = out;
-// }
-
 function timeConverter(UNIX_timestamp){
-    let months = ['Jan', 'Feb', 'Mar', "Apr", "May", 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    let months = ['Янв', 'Фев', 'Mар', "Апр", "Май", 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'];
     let a = new Date(UNIX_timestamp * 1000);
     let month = months[a.getMonth()];
     let years = a.getFullYear();
@@ -637,59 +631,8 @@ function timeConverter(UNIX_timestamp){
     return time;
 }
 
-// booking
 
 
-function fillDates() {
-    const dateFrom = document.getElementsByClassName('bookingBlockFormLabelFromInput');
-    const dateTo = document.getElementsByClassName('bookingBlockFormLabelToInput');
-    const today = new Date().toISOString().substr(0, 10);
-    console.log(dateFrom);
-    for(let elem of dateFrom){
-        console.log(elem);
-        elem.value = today;
-        elem.setAttribute('min',today);
-        elem.addEventListener('change',function(e){
-            dateValidator(e);
-        });
-    }
-    for(let elem of dateTo){
-        elem.value = today;
-        elem.setAttribute('max','2025-12-12');
-        elem.addEventListener('change',function(e){
-            dateValidator(e);
-        });
-    }
-
-}
-
-function dateValidator(e) {
-    const dateFrom = e.target.closest('.booking').getElementsByClassName('bookingBlockFormLabelFromInput')[0];
-    const dateTo = e.target.closest('.booking').getElementsByClassName('bookingBlockFormLabelToInput')[0];
-    const today = new Date().toISOString().substr(0, 10);
-    dateTo.setAttribute('min', dateFrom.value);
-    if (Date.parse(dateFrom.value) < Date.parse(today)) {
-        dateFrom.value = today;
-    }
-    if (Date.parse(dateTo.value) < Date.parse(dateFrom.value)) {
-        dateTo.value = dateFrom.value;
-    }
-
-}
-
-// function dateValidator(e) {
-//     console.log(e);
-//     const dateFrom = document.getElementById('dateFromField');
-//     const dateTo = document.getElementById('dateToField');
-//     const today = new Date().toISOString().substr(0, 10);
-//     dateTo.setAttribute('min',dateFrom.value);
-//     if (Date.parse(dateTo.value) < Date.parse(dateFrom.value)) {
-//         dateTo.value = dateFrom.value;
-//     }
-//     if (Date.parse(dateFrom.value) < Date.parse(today)) {
-//         dateFrom.value = today;
-//     }
-// }
 
 
 //pagination
@@ -786,7 +729,7 @@ function loadAddedApartment(){
 function SetupPagination(items, paginationBlock, rows_per_page) {
     paginationBlock.innerHTML = "";
 
-    let page_count = Math.ceil(items.length / rows_per_page); //количество страниц
+    let page_count = Math.ceil(items.length / rows_per_page);
     for (let i = 1; i < page_count + 1; i++) {
         let btn = PaginationButton(i, sorting(items));
         paginationBlock.appendChild(btn);
@@ -813,35 +756,8 @@ function PaginationButton (page, items) {
 }
 
 
-// Поиск по сайту
-document.querySelector('#catalog').oninput = function() {
-    let val = this.value.trim();
-    let catalogItems = document.querySelectorAll('.catalog li');
-    if (val != '') {
-        catalogItems.forEach(function (elem) {
-            if (elem.innerText.search(val) == -1) {
-                elem.classList.add('hide');
-                elem.innerHTML = elem.innerText;
-            } else {
-                elem.classList.remove('hide');
-                let str = elem.innerText;
-                elem.innerHTML = insertMark(str, elem.innerText.search(val), val.length);
-            }
-        });
-    } else {
-        catalogItems.forEach(function (elem) {
-            elem.classList.add('hide');
-        });
-    }
-}
 
-function insertMark(string, position, length){
-    return string.slice(0, position) +'<mark>'+string.slice(position, position + length)+'</mark>'+string.slice(position+length);
-}
-
-
-
-//Создаем дом
+//create Element
 function createElement(type, className){
     let elem = document.createElement(type);
     elem.className = className;
