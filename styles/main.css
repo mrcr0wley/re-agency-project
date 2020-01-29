@@ -267,6 +267,10 @@ textarea{
 
 /*add-object*/
 
+.Main{
+    margin-bottom: 70px;
+}
+
 .add-object{
     display: none;
     position: absolute;
